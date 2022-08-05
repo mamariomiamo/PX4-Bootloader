@@ -22,6 +22,7 @@ TARGET_HW_TAP_V1                       64
 TARGET_HW_CRAZYFLIE                    12
 TARGET_HW_CRAZYFLIE21                  14
 TARGET_HW_OMNIBUSF4SD                  42
+TARGET_HW_GNF405                      43
 TARGET_HW_AUAV_X2V1                    33
 TARGET_HW_AEROFC_V1                    65
 TARGET_TAP_V2                          66

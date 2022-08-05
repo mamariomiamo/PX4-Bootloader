@@ -71,6 +71,7 @@ TARGETS	= \
 	mindpxv2_bl \
 	modalai_fc_v1_bl \
 	omnibusf4sd_bl \
+	flywoo_gnf405_bl \
 	pix32v5_bl \
 	px4aerocore_bl \
 	px4discovery_bl \
@@ -157,6 +158,9 @@ crazyflie21_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
 
 omnibusf4sd_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
 	${MAKE} ${MKFLAGS} -f  Makefile.f4 TARGET_HW=OMNIBUSF4SD LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
+
+flywoo_gnf405_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
+	${MAKE} ${MKFLAGS} -f  Makefile.f4 TARGET_HW=GNF405 LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
 
 cube_f4_bl: $(MAKEFILE_LIST) $(LIBOPENCM3)
 	${MAKE} ${MKFLAGS} -f  Makefile.f4 TARGET_HW=CUBE_F4  LINKER_FILE=stm32f4.ld TARGET_FILE_NAME=$@
